@@ -1,7 +1,18 @@
 aid: matic
 name: Matic
-description: Matic is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Matic is a digital insurance marketplace and independent insurance agency that
+  lets consumers compare and buy home, auto, pet, umbrella, jewelry and other
+  personal-lines insurance from a network of 60+ A-rated carriers in one place.
+  Founded in 2014 and headquartered in Columbus, Ohio, Matic is best known for
+  its embedded-insurance model: it integrates insurance shopping into the digital
+  experiences of mortgage lenders, servicers, banks and other financial-services
+  partners so borrowers and account holders can obtain coverage at the point of
+  need. Matic is a licensed agency operating in all 50 states and is backed by
+  investors including Anthemis. It was added to the API Evangelist network as a
+  portfolio-lead stub; this enrichment pass confirms Matic operates as a
+  consumer-facing insurance marketplace with a partner/embedded-insurance
+  business but no publicly documented developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/matic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +20,68 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Embedded Insurance
+- Personal Lines
+- Home Insurance
+- Auto Insurance
+- Marketplace
+- Financial Services
+image: https://matic.com/favicon.ico
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/matic-vulnerability-disclosure.yml
+- type: Security
+  url: well-known/matic-security.txt
+- type: DomainSecurity
+  url: security/matic-domain-security.yml
+- type: Website
+  url: https://matic.com
+- type: About
+  url: https://matic.com/about-us
+- type: Blog
+  url: https://matic.com/blog
+- type: Partners
+  url: https://matic.com/partners
+- type: Support
+  url: https://matic.com/contact
+- type: Careers
+  url: https://matic.com/careers
+- type: TermsOfService
+  url: https://matic.com/terms
+- type: PrivacyPolicy
+  url: https://matic.com/privacy-policy
+- type: StatusPage
+  url: https://status.matic.com
+- type: WellKnown
+  url: well-known/matic-well-known.yml
+- type: SecurityTxt
+  url: well-known/matic-security.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
