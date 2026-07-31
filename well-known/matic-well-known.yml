@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://matic.com/.well-known/
+host: https://matic.com
+documents:
+  - path: /.well-known/security.txt          # RFC 9116
+    status: 200
+    file: matic-security.txt
+  - path: /.well-known/openid-configuration   # OIDC discovery
+    status: 404
+  - path: /.well-known/oauth-authorization-server  # RFC 8414
+    status: 404
+  - path: /.well-known/api-catalog            # RFC 9727
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+notes: >-
+  Matic publishes only a minimal RFC 9116 security.txt (a single Contact:
+  security@matic.com line; the Expires date 2025-12-31 has lapsed). No OIDC,
+  OAuth, api-catalog or ai-plugin discovery documents are served — consistent
+  with Matic being a consumer insurance marketplace with no public developer API.
