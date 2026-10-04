@@ -54,7 +54,7 @@ tags:
 - Home Insurance
 - Auto Insurance
 - Marketplace
-- Financial-Services
+- Financial Services
 tags_raw:
 - Company
 - Insurance
@@ -65,6 +65,7 @@ tags_raw:
 - Auto Insurance
 - Marketplace
 - Financial Services
+- Financial-Services
 image: https://matic.com/favicon.ico
 apis: []
 common:
